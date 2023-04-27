@@ -4,14 +4,14 @@ export default function Sidoge() {
   return (
     <div className="sidoge">
       <div>
-        <h3>Welcome to SIDOGE</h3>
-        <p>
+        <h3 className="primary ">Welcome to SIDOGE</h3>
+        <p className="mt-3">
           The token dedicated to exploring the unknown and revitalizing
           BNBChain's meme tokens!
         </p>
       </div>
-      <div>
-        <div>
+      <div className="box mt-5">
+        <div className="item">
           <p>
             .At SIDOGE, we believe that investing should be thrilling, not
             boring. That's why we've created a token designed for people who
@@ -19,14 +19,14 @@ export default function Sidoge() {
             way.
           </p>
         </div>
-        <div>
+        <div className="item">
           <p>
             .If you're tired of playing it safe and want to join the wildest
             ride in the crypto world, SIDOGE is the token for you. With us,
             ignite your portfolio and embrace the chaos of the market.
           </p>
         </div>
-        <div>
+        <div className="item">
           <p>
             Join the SIDOGE army today and reignite the glory of BNBChain's meme
             tokens! Remember：It's not about the destination; it's about the

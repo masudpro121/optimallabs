@@ -4,5 +4,28 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 50px
+}
+
+.sidoge .box{
+    display: flex;
+    gap: 20px
+}
+
+.sidoge .box .item{
+    background-image: url(../../img/box.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:  350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sidoge .box .item p{
+    padding: 50px;
     text-align: center;
+    margin-left: -22px;
 }
