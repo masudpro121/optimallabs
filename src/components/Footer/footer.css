@@ -2,6 +2,7 @@
     background-color: #C4E87B;
     display: flex;
     justify-content: space-between;
+   padding: 5px 70px
 }
 .footer * {
     color: var(--bgPrimary)

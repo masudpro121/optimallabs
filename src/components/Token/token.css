@@ -1,8 +1,45 @@
 .token{
     background-image: url(../../img/token-bg.png);
-    min-height: 70vh;
+    min-height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+}
+
+
+.token .imgCont{
+    width: 50%;
+}
+.token .imgCont img{
+    width: 50%;
+}
+
+.token .marketing{
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+
+.token .marketing p{
+    margin: 10px 0;
+    position: relative;
+}
+
+.token .marketing p::before{
+    content:'';
+    position: absolute;
+    width: 25px;
+    height: 7px;
+    background-color: #ACF10E;
+    top: 9px;
+    left: -35px;
+}
+.token .marketing p:nth-child(2):before{
+    background-color:#29A24D;
+}
+.token .marketing p:nth-child(3):before{
+    background-color:#289F83;
 }

@@ -6,7 +6,7 @@ import "./navbar.css"
 export default function Navbar() {
   return (
     <div className="d-flex justify-content-between align-items-center mynav">
-        <div className='logo'>SpaceDoge</div>
+        <div className='logo'><h5>SpaceDoge</h5></div>
         <div className='d-flex align-items-center gap-3'>
             <p>Airdrop</p>
             <p>About Us</p>
