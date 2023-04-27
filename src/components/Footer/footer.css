@@ -1,0 +1,22 @@
+.footer{
+    background-color: #C4E87B;
+    display: flex;
+    justify-content: space-between;
+}
+.footer * {
+    color: var(--bgPrimary)
+}
+
+.footer .icon{
+    border: 2px solid #123f2b;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .icon svg path {
+    color: #123f2b !important
+}

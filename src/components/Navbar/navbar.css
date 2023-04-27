@@ -1,0 +1,22 @@
+.mynav{
+    background: var(--bgGradient2);
+    padding: 10px 50px;
+}
+
+.mynav .logo{
+    color: var(--primaryColor)
+}
+
+.mynav .icon{
+    border: 2px solid #83f8a5;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mynav .icon svg path {
+    color: #83f8a5 !important
+}

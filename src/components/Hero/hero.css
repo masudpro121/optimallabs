@@ -1,0 +1,80 @@
+.hero{
+    background-image: url(../../img/herobg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    text-align: center;
+}
+
+.hero .space{
+    font-weight: 700;
+    color: var(--primaryColor)
+}
+
+
+.hero .hexagonal{
+    max-width: 550px;
+    height: 600px;
+    margin: auto;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../../img/hexa-shape.png);
+}
+
+
+.hero .hexagonal .inner{
+    flex-direction: column;
+    width: 80%;
+   
+}
+
+
+.hero .central div{
+    width: 100%;
+}
+
+.hero button {
+    background: #183d2f;
+    color: #73A095
+}
+
+.hero .burned{
+    color: var(--primaryColor);
+    padding: 8px 15px;
+    margin-top: 10px;
+    
+}
+.hero .didnt{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px
+
+}
+.hero .didnt button{
+    padding: 10px 15px;
+    font-size: 13px;
+
+}
+
+.hero .claim{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 10px;
+}
+
+.hero .claim::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 7px;
+    border-radius: 5px;
+    background-color: #183d2f;
+}
