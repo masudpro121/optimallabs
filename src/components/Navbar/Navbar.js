@@ -6,12 +6,12 @@ import "./navbar.css";
 import Logo from '../../img/logo.png'
 export default function Navbar() {
   return (
-    <div className="d-flex justify-content-between align-items-center mynav">
+    <div className=" mynav">
       <div className="logo">
         <img  src={Logo} alt="" />
         <h5>SpaceDoge</h5>
       </div>
-      <div className="d-flex align-items-center gap-3 navLink">
+      <div className="navLink">
         <p onClick={() => window.open("/#airdrop", "_self")}>Airdrop</p>
         <p onClick={() => window.open("/#about_us", "_self")}>About Us</p>
         <p onClick={() => window.open("/#token_economics", "_self")}>

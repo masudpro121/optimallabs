@@ -1,8 +1,17 @@
 .mynav{
     background: var(--bgGradient2);
     padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px
 }
-
+.mynav .navLink{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 .mynav .navLink p{
     cursor: pointer
 }
