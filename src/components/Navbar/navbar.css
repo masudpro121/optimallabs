@@ -3,8 +3,18 @@
     padding: 10px 50px;
 }
 
+.mynav .navLink p{
+    cursor: pointer
+}
+
 .mynav .logo{
-    color: var(--primaryColor)
+    color: var(--primaryColor);
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+.mynav .logo img{
+    width: 40px;
 }
 
 .mynav .icon{
@@ -15,6 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .mynav .icon svg path {

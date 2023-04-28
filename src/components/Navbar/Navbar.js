@@ -1,24 +1,45 @@
-import React from 'react'
-import {SiBinance} from 'react-icons/si'
-import {FaTwitter} from 'react-icons/fa'
-import {BsTelegram} from 'react-icons/bs'
-import "./navbar.css"
+import React from "react";
+import { SiBinance } from "react-icons/si";
+import { FaTwitter } from "react-icons/fa";
+import { BsTelegram } from "react-icons/bs";
+import "./navbar.css";
+import Logo from '../../img/logo.png'
 export default function Navbar() {
   return (
     <div className="d-flex justify-content-between align-items-center mynav">
-        <div className='logo'><h5>SpaceDoge</h5></div>
-        <div className='d-flex align-items-center gap-3'>
-            <p>Airdrop</p>
-            <p>About Us</p>
-            <p>Token Economics</p>
+      <div className="logo">
+        <img  src={Logo} alt="" />
+        <h5>SpaceDoge</h5>
+      </div>
+      <div className="d-flex align-items-center gap-3 navLink">
+        <p onClick={() => window.open("/#airdrop", "_self")}>Airdrop</p>
+        <p onClick={() => window.open("/#about_us", "_self")}>About Us</p>
+        <p onClick={() => window.open("/#token_economics", "_self")}>
+          Token Economics
+        </p>
+      </div>
+      <div className="d-flex gap-2">
+        <div
+          className="icon"
+          onClick={() => window.open("https://binance.com/username", "_blank")}
+        >
+          <SiBinance />
         </div>
-        <div className='d-flex gap-2'>
-            <div className='icon'><SiBinance /></div>
-            <div className='icon'><FaTwitter /></div>
-            <div className='icon'><BsTelegram /></div>
-            <button>Buy Now</button>
-            <button style={{marginLeft:'10px'}}>Connect Now</button>
+        <div
+          className="icon"
+          onClick={() => window.open("https://twitter.com/username", "_blank")}
+        >
+          <FaTwitter />
         </div>
+        <div
+          className="icon"
+          onClick={() => window.open("https://telegram.com/username", "_blank")}
+        >
+          <BsTelegram />
+        </div>
+        <button>Buy Now</button>
+        <button style={{ marginLeft: "10px" }}>Connect Now</button>
+      </div>
     </div>
-  )
+  );
 }

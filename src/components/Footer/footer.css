@@ -16,8 +16,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .footer .icon svg path {
     color: #123f2b !important
+}
+
+.footer .navLink p{
+    cursor: pointer;
 }

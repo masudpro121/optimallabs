@@ -11,16 +11,16 @@ export default function Footer() {
         <h5>SpaceDoge</h5>
         <p>Piercing the veil, kindling the unknown flame of BNBChain.</p>
       </div>
-      <div>
-        <div className="d-flex gap-3">
-          <p>Airdrop</p>
-          <p>About Us</p>
-          <p>Token Economics</p>
+      <div className="mt-2 mb-2">
+        <div className="d-flex gap-3  navLink">
+          <p onClick={()=>window.open('/#airdrop','_self')}>Airdrop</p>
+          <p onClick={()=>window.open('/#about_us','_self')}>About Us</p>
+          <p onClick={()=>window.open('/#token_economics','_self')}>Token Economics</p>
         </div>
-        <div className="d-flex gap-3 mt-2">
-            <div className='icon'><SiBinance /></div>
-            <div className='icon'><FaTwitter /></div>
-            <div className='icon'><BsTelegram /></div>
+        <div className="d-flex gap-3 mt-3">
+        <div className='icon' onClick={()=>window.open('https://binance.com/username', '_blank')}><SiBinance /></div>
+            <div className='icon' onClick={()=>window.open('https://twitter.com/username', '_blank')}><FaTwitter /></div>
+            <div className='icon' onClick={()=>window.open('https://telegram.com/username', '_blank')}><BsTelegram /></div>
         </div>
       </div>
     </div>
