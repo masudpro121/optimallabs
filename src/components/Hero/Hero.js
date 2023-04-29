@@ -5,9 +5,7 @@ import Video from '../../video/bg.mp4'
 export default function Hero() {
   return (
     <div className="hero-outer">
-      <video autoPlay={true} muted loop id="myVideo">
-        <source src={Video} type="video/mp4" />
-      </video>
+     
       <div className="hero py-5">
       <div className=" pb-2">
         <h2>The token that’s all about</h2>
@@ -32,8 +30,8 @@ export default function Hero() {
             <p>70 000 000 000</p>
           </div>
           <div className="didnt">
-            <button>You didn't connect the wallet</button>
-            <button>You didn't connect the wallet</button>
+            <button>Claim Airdrop</button>
+            <button>Referral</button>
           </div>
           </div>
         </div>
