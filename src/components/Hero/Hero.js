@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./hero.css";
 
-import Video from '../../video/bg.mp4'
 import { ProgressBar } from "react-bootstrap";
 export default function Hero() {
   const [referral, setReferral] = useState('http://myrefer.com/')
