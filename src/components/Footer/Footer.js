@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
         <div className="d-flex gap-3 mt-3">
         <div className='icon' onClick={()=>window.open('https://binance.com/username', '_blank')}><SiBinance /></div>
-            <div className='icon' onClick={()=>window.open('https://twitter.com/username', '_blank')}><FaTwitter /></div>
+            <div className='icon' onClick={()=>window.open('https://twitter.com/SpaceDogeAI', '_blank')}><FaTwitter /></div>
             <div className='icon' onClick={()=>window.open('https://telegram.com/username', '_blank')}><BsTelegram /></div>
         </div>
       </div>

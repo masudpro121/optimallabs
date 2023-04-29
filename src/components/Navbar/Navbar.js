@@ -27,7 +27,7 @@ export default function Navbar() {
         </div>
         <div
           className="icon"
-          onClick={() => window.open("https://twitter.com/username", "_blank")}
+          onClick={() => window.open("https://twitter.com/SpaceDogeAI", "_blank")}
         >
           <FaTwitter />
         </div>

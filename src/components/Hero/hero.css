@@ -63,16 +63,15 @@
 }
 .hero .didnt{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 15px;
     margin-top: 50px;
-    align-items: center
+    /* align-items: center */
 
 }
 .hero .didnt button{
     padding: 10px 15px;
     font-size: 13px;
-    width: 150px
 }
 
 .hero .claim{
@@ -82,7 +81,7 @@
     margin-top: 10px;
 }
 
-.hero .claim::after{
+/* .hero .claim::after{
     content: '';
     position: absolute;
     bottom: -10px;
@@ -90,4 +89,10 @@
     height: 7px;
     border-radius: 5px;
     background-color: #183d2f;
-}
+} */
+
+
+
+
+/* --------  */
+

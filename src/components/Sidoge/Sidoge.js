@@ -2,7 +2,7 @@ import React from "react";
 import "./sidoge.css"
 export default function Sidoge() {
   return (
-    <div className="sidoge">
+    <div id="about_us"  className="sidoge">
       <div>
         <h3 className="primary ">Welcome to SIDOGE</h3>
         <p className="mt-3">

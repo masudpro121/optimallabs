@@ -3,7 +3,7 @@ import "./token.css";
 import TokenAnalysis from "../../img/token-analysis.png"
 export default function Token() {
   return (
-    <div className="token">
+    <div id="token_economics"  className="token">
       <div>
         <div>
           <h2 className="primary">Token Economics</h2>

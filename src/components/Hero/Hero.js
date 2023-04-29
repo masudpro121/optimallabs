@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./hero.css";
 
 import Video from '../../video/bg.mp4'
+import { ProgressBar } from "react-bootstrap";
+import Progress from "../Progress/Progress";
 export default function Hero() {
+  const [referral, setReferral] = useState('http://myrefer.com/')
+  
+  
   return (
-    <div className="hero-outer">
+    <div id="airdrop" className="hero-outer">
      
       <div className="hero py-5">
       <div className=" pb-2">
@@ -29,9 +34,12 @@ export default function Hero() {
             <p>Claimed</p>
             <p>70 000 000 000</p>
           </div>
+          {/* <Progress /> */}
+
           <div className="didnt">
             <button>Claim Airdrop</button>
-            <button>Referral</button>
+            <div className="mt-2">{referral}</div>
+            <button onClick={()=>navigator.clipboard.writeText(referral)}>Copy</button>
           </div>
           </div>
         </div>
