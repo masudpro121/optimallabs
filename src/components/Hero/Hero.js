@@ -38,7 +38,7 @@ export default function Hero() {
             <p>Claimed</p>
             <p>70 000 000 000</p>
           </div>
-          <progress id="progress-bar" onMouseMove={handleProgress}  value={progress} max={100} className="media-progress mt-3"  />
+          <progress id="progress-bar" onMouseDownCapture={handleProgress}  value={progress} max={100} className="media-progress mt-3"  />
 
           <div className="didnt">
             <button>Claim Airdrop</button>
