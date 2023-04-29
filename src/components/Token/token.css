@@ -12,7 +12,12 @@
 
 .token .imgCont{
     width: 50%;
+    position: relative;
 }
+/* .token .imgCont::before{
+    content:'';
+    position: absolute;
+} */
 .token .imgCont img{
     width: 80%;
 }
