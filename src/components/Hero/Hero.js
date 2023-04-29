@@ -3,10 +3,9 @@ import "./hero.css";
 
 import Video from '../../video/bg.mp4'
 import { ProgressBar } from "react-bootstrap";
-import Progress from "../Progress/Progress";
 export default function Hero() {
   const [referral, setReferral] = useState('http://myrefer.com/')
-  
+  const [progress, setProgress] = useState(20);
   
   return (
     <div id="airdrop" className="hero-outer">
@@ -34,7 +33,7 @@ export default function Hero() {
             <p>Claimed</p>
             <p>70 000 000 000</p>
           </div>
-          {/* <Progress /> */}
+          <progress  value={progress} max={100} className="media-progress mt-3"  />
 
           <div className="didnt">
             <button>Claim Airdrop</button>
