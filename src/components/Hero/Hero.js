@@ -5,8 +5,14 @@ import Video from '../../video/bg.mp4'
 import { ProgressBar } from "react-bootstrap";
 export default function Hero() {
   const [referral, setReferral] = useState('http://myrefer.com/')
-  const [progress, setProgress] = useState(20);
-  
+  const [progress, setProgress] = useState(80);
+  const handleProgress = (e) => {
+    const progressBar = document.getElementById('progress-bar');
+    const rect = progressBar.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left;
+    const percent = (mouseX / progressBar.offsetWidth) * 100;
+    setProgress(percent)
+  }
   return (
     <div id="airdrop" className="hero-outer">
      
@@ -33,7 +39,7 @@ export default function Hero() {
             <p>Claimed</p>
             <p>70 000 000 000</p>
           </div>
-          <progress  value={progress} max={100} className="media-progress mt-3"  />
+          <progress id="progress-bar" onMouseMove={handleProgress}  value={progress} max={100} className="media-progress mt-3"  />
 
           <div className="didnt">
             <button>Claim Airdrop</button>
